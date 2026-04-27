@@ -416,6 +416,109 @@ export default async function Home(props: { searchParams?: any }) {
                       <div className="bg-black/20 p-2 rounded text-center">
                         <p className="text-[7px] font-bold uppercase tracking-tighter italic">"Remplissez la grille, gagnez le mépris de vos amis."</p>
                       </div>
+                    </div>,
+                    // 10. Mamy Nenette
+                    <div key="nenette" className="border-4 border-black p-4 bg-pink-100 flex flex-col gap-3 shadow-[8px_8px_0_0_rgba(0,0,0,1)] hover:bg-pink-200 transition-colors cursor-pointer">
+                      <div className="flex justify-between items-start text-black">
+                        <span className="bg-black text-white text-[8px] px-2 py-0.5 font-bold uppercase">Hotline 24/7</span>
+                        <span className="text-[10px] font-black">08 36 65...</span>
+                      </div>
+                      <div className="flex gap-3">
+                        <div className="w-1/2 shrink-0">
+                          <img src="/media/nenette.png" alt="Mamy Nenette" className="w-full grayscale border-2 border-black" />
+                        </div>
+                        <div className="flex flex-col justify-center">
+                          <h4 className="font-black text-lg uppercase leading-none mb-1 text-black">Mamy Nenette</h4>
+                          <p className="text-[9px] leading-tight font-serif italic text-gray-800">"Besoin de tendresse ou d'un trauma durable ? Appelle Mamy."</p>
+                        </div>
+                      </div>
+                      <div className="border-t-2 border-black pt-2 text-center">
+                        <span className="text-[10px] font-black uppercase tracking-widest text-black">3.50€ / minute + Prix d'un appel local</span>
+                      </div>
+                    </div>,
+                    // 11. Rétroviseur
+                    <div key="retro" className="border-2 border-black p-3 bg-white flex flex-col gap-2 hover:translate-x-1 hover:translate-y-1 transition-transform cursor-pointer">
+                      <div className="flex items-center gap-2 mb-1">
+                        <div className="w-8 h-8 bg-black text-white flex items-center justify-center font-black text-xs">!</div>
+                        <h4 className="font-black text-sm uppercase text-black">Auto-Rétro-Vision</h4>
+                      </div>
+                      <img src="/media/retro.png" alt="Rétroviseur" className="w-full grayscale border border-black mb-1" />
+                      <p className="text-[9px] font-serif leading-tight text-gray-800">Votre rétroviseur est cassé ? On s'en fiche, regardez devant. Ou achetez celui-ci, il est hanté par l'ancien proprio.</p>
+                      <div className="bg-black text-white text-center py-1 text-[8px] font-bold uppercase">Voir l'offre obsolète</div>
+                    </div>,
+                    // 12. OVNI
+                    <div key="ufo" className="bg-green-900 text-green-100 p-5 border-2 border-green-500 shadow-[inset_0_0_10px_rgba(0,255,0,0.5)] font-mono relative overflow-hidden group cursor-pointer">
+                      <div className="absolute top-0 right-0 w-16 h-16 bg-green-500/10 rounded-full blur-xl animate-pulse"></div>
+                      <h4 className="text-xl font-black uppercase tracking-tighter mb-2 border-b border-green-500 pb-1">ALERTE ENLÈVEMENT</h4>
+                      <p className="text-[10px] leading-tight mb-3 text-green-100">Les aliens sont là. Ils ont lu vos DM et ils exigent l'expulsion immédiate de Miguel de la Terre.</p>
+                      <div className="flex justify-between items-end">
+                        <img src="/media/ufo.png" alt="UFO" className="w-16 grayscale brightness-200 contrast-150 border border-green-500" />
+                        <div className="text-right">
+                          <span className="block text-[8px] uppercase font-bold text-green-300">Probabilité : 99.9%</span>
+                          <span className="inline-block bg-green-500 text-black px-2 py-1 text-[9px] font-black mt-1 group-hover:bg-white transition-colors">REJOINDRE LE VAISSEAU</span>
+                        </div>
+                      </div>
+                    </div>,
+                    // 13. Brique-Phone
+                    <div key="brick" className="border-2 border-black p-4 bg-gray-50 flex flex-col gap-3 shadow-[4px_4px_0_0_rgba(0,0,0,1)] hover:bg-white transition-colors cursor-pointer">
+                      <div className="flex justify-between items-center text-black">
+                        <span className="text-[10px] font-black uppercase tracking-tighter">Miguel Luxury</span>
+                        <span className="bg-black text-white text-[8px] px-1 font-bold">NV</span>
+                      </div>
+                      <img src="/media/brick.png" alt="Brique-Phone" className="w-full grayscale border border-black" />
+                      <h4 className="font-black text-md uppercase leading-none text-black">Brique-Phone v17</h4>
+                      <p className="text-[9px] font-serif italic text-gray-800">Le 16 est déjà obsolète. Achetez le 17 : plus lourd, plus cher, et ne capte toujours pas chez Miguel.</p>
+                    </div>,
+                    // 14. Radiateur Rust
+                    <div key="radiateur" className="bg-orange-50 border-2 border-orange-600 p-4 flex flex-col gap-2 shadow-[4px_4px_0_0_rgba(234,88,12,1)] hover:translate-x-1 hover:translate-y-1 transition-all cursor-pointer">
+                      <h4 className="text-orange-950 font-black text-lg uppercase leading-tight italic">RADIATEUR "RUST"</h4>
+                      <div className="flex gap-3">
+                        <div className="w-1/3 shrink-0">
+                          <img src="/media/radiateur.png" alt="Radiateur Rust" className="w-full grayscale contrast-125 border border-orange-600" />
+                        </div>
+                        <div className="flex flex-col justify-center">
+                          <p className="text-[9px] font-sans font-bold text-orange-800 leading-tight">Pourquoi payer l'EDF ? Lancez Rust et gagnez 10°C dans votre chambre instantanément.</p>
+                        </div>
+                      </div>
+                      <div className="bg-orange-600 text-white text-center py-1 text-[8px] font-bold uppercase">Technologie Lucas Inside</div>
+                    },
+                    // 15. Lethal Company
+                    <div key="lethal" className="border-4 border-double border-black p-4 bg-yellow-50 flex flex-col gap-2 shadow-[6px_6px_0_0_rgba(0,0,0,1)] hover:bg-yellow-100 transition-colors cursor-pointer">
+                      <div className="flex justify-between items-center text-black">
+                        <span className="text-[10px] font-black uppercase tracking-tighter">La Compagnie</span>
+                        <div className="flex gap-1">
+                          <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse"></div>
+                          <span className="text-[8px] font-bold text-red-600">LIVE</span>
+                        </div>
+                      </div>
+                      <img src="/media/lethal.png" alt="Lethal Company" className="w-full grayscale border-2 border-black" />
+                      <h4 className="font-black text-md uppercase leading-none text-black">NOUS RECRUTONS !</h4>
+                      <p className="text-[9px] font-serif leading-tight text-gray-800">Besoin de ferraille. Les cadavres ne seront pas rendus aux familles. Salaire : Une tape sur l'épaule.</p>
+                      <div className="bg-black text-white text-center py-1 text-[8px] font-bold uppercase mt-1">Signer le contrat de mort</div>
+                    </div>,
+                    // 16. REPO
+                    <div key="repo" className="border-2 border-black p-3 bg-red-50 flex flex-col gap-2 hover:rotate-1 transition-transform cursor-pointer shadow-[4px_4px_0_0_rgba(153,27,27,1)]">
+                      <h4 className="font-black text-sm uppercase text-red-900 border-b border-red-900/30 pb-1">REPO & CO</h4>
+                      <div className="flex gap-3">
+                        <div className="w-1/3 shrink-0">
+                          <img src="/media/repo.png" alt="REPO" className="w-full grayscale border border-red-900" />
+                        </div>
+                        <div className="flex flex-col justify-center">
+                          <p className="text-[8px] font-bold text-red-800 leading-tight">Vous avez des dettes ? On s'en occupe. On prend tout, même votre dignité et votre micro-ondes.</p>
+                        </div>
+                      </div>
+                      <div className="bg-red-900 text-white text-center py-1 text-[8px] font-bold uppercase">Saisie immédiate &rarr;</div>
+                    </div>,
+                    // 17. Euro Truck
+                    <div key="truck" className="border-2 border-black p-4 bg-blue-50 flex flex-col gap-2 hover:-translate-y-1 transition-all cursor-pointer">
+                      <div className="flex justify-between items-center text-black">
+                        <span className="text-[8px] font-black uppercase">Auto-École Miguel</span>
+                        <span className="text-[8px] font-serif italic text-gray-400">Publicité</span>
+                      </div>
+                      <img src="/media/truck.png" alt="Euro Truck" className="w-full grayscale border border-black" />
+                      <h4 className="font-black text-md uppercase leading-none text-black">Euro Truck Simulator</h4>
+                      <p className="text-[9px] font-serif leading-tight text-gray-800">Le fun de l'autoroute A1 sans les péages. Migraine et fatigue oculaire garanties sous 2h.</p>
+                      <div className="bg-blue-900 text-white text-center py-1 text-[8px] font-bold uppercase">Passer son permis C</div>
                     </div>
                   ];
 
