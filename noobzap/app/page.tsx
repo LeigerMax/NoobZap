@@ -481,7 +481,7 @@ export default async function Home(props: { searchParams?: any }) {
                         </div>
                       </div>
                       <div className="bg-orange-600 text-white text-center py-1 text-[8px] font-bold uppercase">Technologie Lucas Inside</div>
-                    },
+                    </div>,
                     // 15. Lethal Company
                     <div key="lethal" className="border-4 border-double border-black p-4 bg-yellow-50 flex flex-col gap-2 shadow-[6px_6px_0_0_rgba(0,0,0,1)] hover:bg-yellow-100 transition-colors cursor-pointer">
                       <div className="flex justify-between items-center text-black">
